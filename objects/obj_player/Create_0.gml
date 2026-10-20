@@ -9,7 +9,7 @@ coyote_max_frames = 5;
 coyote_timer = 5;
 pathframe = 0;
 
-
+// Git testing arbitrary file change
 jump_speed = -5.3; 
 max_fall_speed = 6; 
 grav_power = 0.25;
