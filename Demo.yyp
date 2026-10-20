@@ -28,7 +28,7 @@
   },
   "name":"Demo",
   "resources":[
-    {"id":{"name":"name.py","path":"notes/name.py/name.py.yy",},},
+    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
     {"id":{"name":"obj_origin","path":"objects/obj_origin/obj_origin.yy",},},
     {"id":{"name":"obj_planet","path":"objects/obj_planet/obj_planet.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
