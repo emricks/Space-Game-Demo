@@ -1,0 +1,16 @@
+# GameMaker specific files
+*.resource_order
+*.old
+*.bak
+
+# Crash reports and logs
+*.stackdump
+ui_log.txt
+
+# Operating System junk
+[Dd]esktop.ini
+Thumbs.db
+.DS_Store
+
+# If extensions like GMLive are used, ignore its cache
+/GMLive/
