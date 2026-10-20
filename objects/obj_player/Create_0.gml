@@ -1,5 +1,5 @@
-total_minutes = 880;
-total_hours = 14.6;
+total_minutes = 882;
+total_hours = 14.7;
 move_speed = 1; 
 global.mobile = 1;
 global.platforming = 0;
