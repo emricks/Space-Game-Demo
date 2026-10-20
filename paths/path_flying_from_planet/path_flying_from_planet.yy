@@ -1,0 +1,26 @@
+{
+  "$GMPath":"",
+  "%Name":"path_flying_from_planet",
+  "closed":false,
+  "kind":1,
+  "name":"path_flying_from_planet",
+  "parent":{
+    "name":"Demo",
+    "path":"Demo.yyp",
+  },
+  "points":[
+    {"speed":100.0,"x":287.0,"y":608.0,},
+    {"speed":100.0,"x":246.76141,"y":607.41034,},
+    {"speed":100.0,"x":236.94345,"y":634.94885,},
+    {"speed":100.0,"x":229.4367,"y":645.82196,},
+    {"speed":100.0,"x":229.5681,"y":664.592,},
+    {"speed":100.0,"x":240.63379,"y":715.3109,},
+    {"speed":100.0,"x":159.28699,"y":693.72876,},
+    {"speed":100.0,"x":175.62463,"y":624.1612,},
+    {"speed":100.0,"x":117.41301,"y":627.6776,},
+    {"speed":100.0,"x":113.011185,"y":664.7196,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

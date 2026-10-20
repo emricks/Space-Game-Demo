@@ -1,0 +1,25 @@
+{
+  "$GMPath":"",
+  "%Name":"path_flying_to_planet",
+  "closed":false,
+  "kind":1,
+  "name":"path_flying_to_planet",
+  "parent":{
+    "name":"Demo",
+    "path":"Demo.yyp",
+  },
+  "points":[
+    {"speed":100.0,"x":192.0,"y":660.0,},
+    {"speed":100.0,"x":222.85976,"y":659.2821,},
+    {"speed":100.0,"x":300.0,"y":620.0,},
+    {"speed":100.0,"x":284.09015,"y":553.8564,},
+    {"speed":100.0,"x":267.02966,"y":525.8972,},
+    {"speed":100.0,"x":202.0,"y":530.0,},
+    {"speed":100.0,"x":208.03503,"y":603.8047,},
+    {"speed":100.0,"x":301.0,"y":605.0,},
+    {"speed":100.0,"x":357.0,"y":606.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

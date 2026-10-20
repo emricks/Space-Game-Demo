@@ -1,0 +1,1 @@
+global.mobile = 1;
