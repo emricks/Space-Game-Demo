@@ -1,7 +1,7 @@
 {
   "$GMNotes":"v1",
-  "%Name":"Note",
-  "name":"Note",
+  "%Name":"name.py",
+  "name":"name.py",
   "parent":{
     "name":"Demo",
     "path":"Demo.yyp",
