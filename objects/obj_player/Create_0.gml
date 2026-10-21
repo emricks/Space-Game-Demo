@@ -12,8 +12,7 @@ pathframe = 0;
 // Git testing arbitrary file change
 jump_speed = -5.3; 
 max_fall_speed = 6; 
-grav_power = 0.25;
-
+grav_power = 0.2;
 
 running = 0;
 tilemap = layer_tilemap_get_id("Tiles_Col");
