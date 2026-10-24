@@ -4,6 +4,7 @@ move_speed = 1;
 global.mobile = 1;
 global.platforming = 0;
 global.testroom = rm_left;
+global.dialogue = 0;
 vel_y = 0;
 coyote_max_frames = 5;
 coyote_timer = 5;
@@ -22,6 +23,8 @@ no_movement_rooms = [rm_space];
 rocket_rooms = [rm_space];
 platforming_rooms = [rm_planet];
 
+collision_objects = [obj_npc];
+
 rocket_start_angles = {
     "rm_right": -90,
     "rm_planet": 90
@@ -33,8 +36,8 @@ move_player_debug_room = function(startx, starty) {if (global.previous_room == r
 }}
 
 normal_step = function() { 
-    var _vert = keyboard_check(vk_down)-keyboard_check(vk_up);
-    var _horiz = keyboard_check(vk_right)-keyboard_check(vk_left);
+    var _vert = (keyboard_check(vk_down)-keyboard_check(vk_up))*global.mobile;
+    var _horiz = (keyboard_check(vk_right)-keyboard_check(vk_left))*global.mobile;
     var running = keyboard_check(ord("S"));
        
        if (running) {move_speed = 1.5;}
@@ -46,11 +49,11 @@ normal_step = function() {
            move_speed = 0;
        }
        
-       move_and_collide(move_speed*_horiz, move_speed*_vert, tilemap, undefined, undefined, undefined, move_speed, move_speed) ;
+       move_and_collide(move_speed*_horiz, move_speed*_vert, array_concat(collision_objects, [tilemap]), undefined, undefined, undefined, move_speed, move_speed) ;
        
        if (array_contains(rocket_rooms, room)) {
            sprite_index = spr_player_rocket;
-       } else if (_vert != 0 or _horiz != 0 or global.mobile = 0) {
+       } else if (_vert != 0 or _horiz != 0) {
            if (_vert > 0) sprite_index = spr_player_walk_down;
                else if (_vert < 0) sprite_index = spr_player_walk_up;
                    else if (_horiz > 0) sprite_index = spr_player_walk_right;
