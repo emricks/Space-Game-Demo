@@ -27,7 +27,7 @@ collision_objects = [obj_npc];
 
 rocket_start_angles = {
     "rm_right": -90,
-    "rm_planet": 90
+    "rm_cloud_planet": 90
 }
 
 move_player_debug_room = function(startx, starty) {if (global.previous_room == rm_origin) {
