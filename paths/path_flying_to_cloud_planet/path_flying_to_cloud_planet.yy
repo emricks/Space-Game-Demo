@@ -5,8 +5,8 @@
   "kind":1,
   "name":"path_flying_to_cloud_planet",
   "parent":{
-    "name":"Demo",
-    "path":"Demo.yyp",
+    "name":"Paths",
+    "path":"folders/Paths.yy",
   },
   "points":[
     {"speed":100.0,"x":160.0,"y":674.0,},

@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"Paths","order":18,"path":"folders/Paths.yy",},
     {"name":"Objects","order":12,"path":"folders/Objects.yy",},
     {"name":"Rooms","order":13,"path":"folders/Rooms.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
@@ -22,12 +23,13 @@
     {"name":"obj_warp_left","order":3,"path":"objects/obj_warp_left/obj_warp_left.yy",},
     {"name":"obj_warp_right","order":1,"path":"objects/obj_warp_right/obj_warp_right.yy",},
     {"name":"obj_warp_up","order":4,"path":"objects/obj_warp_up/obj_warp_up.yy",},
-    {"name":"path_flying_from_cloud_planet","order":15,"path":"paths/path_flying_from_cloud_planet/path_flying_from_cloud_planet.yy",},
-    {"name":"path_flying_to_cloud_planet","order":14,"path":"paths/path_flying_to_cloud_planet/path_flying_to_cloud_planet.yy",},
-    {"name":"path_flying_to_ice_planet","order":17,"path":"paths/path_flying_to_ice_planet/path_flying_to_ice_planet.yy",},
+    {"name":"path_flying_from_ice_planet","order":3,"path":"paths/path_flying_from_ice_planet/path_flying_from_ice_planet.yy",},
+    {"name":"path_flying_to_cloud_planet","order":1,"path":"paths/path_flying_to_cloud_planet/path_flying_to_cloud_planet.yy",},
+    {"name":"path_flying_to_ice_planet","order":2,"path":"paths/path_flying_to_ice_planet/path_flying_to_ice_planet.yy",},
     {"name":"rm_center","order":2,"path":"rooms/rm_center/rm_center.yy",},
     {"name":"rm_cloud_planet","order":6,"path":"rooms/rm_cloud_planet/rm_cloud_planet.yy",},
     {"name":"rm_down","order":4,"path":"rooms/rm_down/rm_down.yy",},
+    {"name":"rm_ice_planet","order":9,"path":"rooms/rm_ice_planet/rm_ice_planet.yy",},
     {"name":"rm_left","order":1,"path":"rooms/rm_left/rm_left.yy",},
     {"name":"rm_origin","order":8,"path":"rooms/rm_origin/rm_origin.yy",},
     {"name":"rm_right","order":7,"path":"rooms/rm_right/rm_right.yy",},
