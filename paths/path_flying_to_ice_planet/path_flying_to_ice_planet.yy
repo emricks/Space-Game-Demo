@@ -1,0 +1,21 @@
+{
+  "$GMPath":"",
+  "%Name":"path_flying_to_ice_planet",
+  "closed":false,
+  "kind":1,
+  "name":"path_flying_to_ice_planet",
+  "parent":{
+    "name":"Demo",
+    "path":"Demo.yyp",
+  },
+  "points":[
+    {"speed":100.0,"x":192.0,"y":660.0,},
+    {"speed":100.0,"x":191.00024,"y":607.0,},
+    {"speed":100.0,"x":226.3438,"y":520.375,},
+    {"speed":100.0,"x":126.093796,"y":499.96872,},
+    {"speed":100.0,"x":126.000244,"y":439.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

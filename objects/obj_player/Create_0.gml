@@ -5,6 +5,8 @@ global.mobile = 1;
 global.platforming = 0;
 global.testroom = rm_left;
 global.dialogue = 0;
+rocket_to = noone;
+rocket_from = noone;
 vel_y = 0;
 coyote_max_frames = 5;
 coyote_timer = 5;
@@ -25,9 +27,24 @@ platforming_rooms = [rm_cloud_planet];
 
 collision_objects = [obj_npc];
 
-rocket_start_angles = {
-    "rm_right": -90,
-    "rm_cloud_planet": 90
+rocket_start_angles = function(to, from) {
+    if (from == obj_spaceship) {
+        if (to == obj_cloud_planet) return -90;
+            else if (to == obj_ice_planet) return 0;
+    } 
+    else if (from == obj_cloud_planet) return 90;
+    else if (from == obj_ice_planet) return 180;
+        
+    return 0;
+}
+rocket_paths = function(to, from) {
+    if (from == obj_spaceship) {
+        if (to == obj_cloud_planet) return path_flying_to_cloud_planet;
+            else if (to == obj_ice_planet) return path_flying_to_ice_planet;
+    }
+    else if (from == obj_cloud_planet) return path_flying_from_cloud_planet;
+        
+    return noone;
 }
 
 move_player_debug_room = function(startx, starty) {if (global.previous_room == rm_origin) {

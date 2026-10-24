@@ -4,4 +4,6 @@ if (!instance_exists(obj_transition)) {
     inst.target_room = target_room
     inst.target_x = target_x;
     inst.target_y = target_y;
+    obj_player.rocket_to = rocket_to;
+    obj_player.rocket_from = rocket_from;
 }

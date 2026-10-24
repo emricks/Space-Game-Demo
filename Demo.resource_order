@@ -24,6 +24,7 @@
     {"name":"obj_warp_up","order":4,"path":"objects/obj_warp_up/obj_warp_up.yy",},
     {"name":"path_flying_from_cloud_planet","order":15,"path":"paths/path_flying_from_cloud_planet/path_flying_from_cloud_planet.yy",},
     {"name":"path_flying_to_cloud_planet","order":14,"path":"paths/path_flying_to_cloud_planet/path_flying_to_cloud_planet.yy",},
+    {"name":"path_flying_to_ice_planet","order":17,"path":"paths/path_flying_to_ice_planet/path_flying_to_ice_planet.yy",},
     {"name":"rm_center","order":2,"path":"rooms/rm_center/rm_center.yy",},
     {"name":"rm_cloud_planet","order":6,"path":"rooms/rm_cloud_planet/rm_cloud_planet.yy",},
     {"name":"rm_down","order":4,"path":"rooms/rm_down/rm_down.yy",},

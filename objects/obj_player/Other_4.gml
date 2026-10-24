@@ -22,6 +22,7 @@ if (array_contains(rocket_rooms, room)) {
 }
 
 if (room == rm_space) {
-    image_angle = rocket_start_angles[$ room_get_name(global.previous_room)]
+    image_angle = rocket_start_angles(rocket_to, rocket_from);
     alarm[1] = 40;
 }
+
