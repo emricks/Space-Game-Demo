@@ -12,8 +12,6 @@ if (sprite_index != spr_player_rocket) {
     image_angle = 0;
 }
 
-show_debug_message(string(sprite_index));
-
 if (global.platforming == 0) {
     normal_step();
 } else {
@@ -22,4 +20,8 @@ if (global.platforming == 0) {
 
 if (pathframe != 0 && path_index == -1) {
     pathframe = 0;
+}
+
+if (!obj_dialoguebox.is_active and !array_contains(no_movement_rooms, room)) {
+    global.mobile = 1;
 }

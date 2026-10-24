@@ -1,1 +1,0 @@
-path_start(path_flying_from_planet, 1, path_action_stop, true)
