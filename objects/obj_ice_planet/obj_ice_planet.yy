@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_planet",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_ice_planet",
+  "eventList":[],
   "managed":true,
-  "name":"obj_planet",
+  "name":"obj_ice_planet",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_planet",
-    "path":"sprites/spr_planet/spr_planet.yy",
+    "name":"spr_ice_planet",
+    "path":"sprites/spr_ice_planet/spr_ice_planet.yy",
   },
   "spriteMaskId":null,
   "visible":true,

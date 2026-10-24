@@ -1,9 +1,9 @@
 {
   "$GMPath":"",
-  "%Name":"path_flying_to_planet",
+  "%Name":"path_flying_to_cloud_planet",
   "closed":false,
   "kind":1,
-  "name":"path_flying_to_planet",
+  "name":"path_flying_to_cloud_planet",
   "parent":{
     "name":"Demo",
     "path":"Demo.yyp",

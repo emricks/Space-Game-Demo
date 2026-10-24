@@ -21,7 +21,7 @@ tilemap_oneway = layer_tilemap_get_id("Tiles_TopCol");
 
 no_movement_rooms = [rm_space];
 rocket_rooms = [rm_space];
-platforming_rooms = [rm_planet];
+platforming_rooms = [rm_cloud_planet];
 
 collision_objects = [obj_npc];
 

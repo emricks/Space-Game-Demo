@@ -1,12 +1,12 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_planet",
-  "creationCodeFile":"rooms/rm_planet/RoomCreationCode.gml",
+  "%Name":"rm_cloud_planet",
+  "creationCodeFile":"rooms/rm_cloud_planet/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_5E230222","path":"rooms/rm_planet/rm_planet.yy",},
+    {"name":"inst_5E230222","path":"rooms/rm_cloud_planet/rm_cloud_planet.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -41,7 +41,7 @@
     {"$GMRBackgroundLayer":"","%Name":"Low_Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.15,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Low_Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_far_clouds","path":"sprites/spr_far_clouds/spr_far_clouds.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":200,"y":144,},
     {"$GMRBackgroundLayer":"","%Name":"Low_Sky_Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Low_Sky_Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_low_sky","path":"sprites/spr_low_sky/spr_low_sky.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":160,},
   ],
-  "name":"rm_planet",
+  "name":"rm_cloud_planet",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",
