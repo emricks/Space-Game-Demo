@@ -12,7 +12,6 @@ coyote_max_frames = 5;
 coyote_timer = 5;
 pathframe = 0;
 
-// Git testing arbitrary file change
 jump_speed = -5.3; 
 max_fall_speed = 6; 
 grav_power = 0.2;
@@ -20,11 +19,12 @@ grav_power = 0.2;
 running = 0;
 tilemap = layer_tilemap_get_id("Tiles_Col");
 tilemap_oneway = layer_tilemap_get_id("Tiles_TopCol");
+tilemap_ice = layer_tilemap_get_id("Tiles_Ice");
 
 no_movement_rooms = [rm_space];
 rocket_rooms = [rm_space];
 platforming_rooms = [rm_cloud_planet];
-
+ice_rooms = [rm_ice_planet];
 collision_objects = [obj_npc];
 
 rocket_start_angles = function(to, from) {
@@ -52,7 +52,10 @@ move_player_debug_room = function(startx, starty) {if (global.previous_room == r
     obj_player.y = starty;
 }}
 
+vx = 0;
+vy = 0;
 normal_step = function() { 
+    var _collision_targets = array_concat(collision_objects, [tilemap])
     var _vert = (keyboard_check(vk_down)-keyboard_check(vk_up))*global.mobile;
     var _horiz = (keyboard_check(vk_right)-keyboard_check(vk_left))*global.mobile;
     var running = keyboard_check(ord("S"));
@@ -66,8 +69,46 @@ normal_step = function() {
            move_speed = 0;
        }
        
-       move_and_collide(move_speed*_horiz, move_speed*_vert, array_concat(collision_objects, [tilemap]), undefined, undefined, undefined, move_speed, move_speed) ;
+    if (global.ice_room && place_meeting(x, y, tilemap_ice)) {
+        
+        if (_horiz != 0) {
+            vx = clamp(vx + (0.05 * _horiz), -3, 3);
+        } else {
+            if (abs(vx) < 0.03) {
+                vx = 0;
+            }
+            if (vx != 0) {
+                vx = sign(vx) * max(0, abs(vx) - 0.03);
+            }
+        }
+    
+        if (_vert != 0) {
+            vy = clamp(vy + (0.05 * _vert), -3, 3);
+        } else {
+            if (abs(vy) < 0.03) {
+                vy = 0;
+            }
+            if (vy != 0) {
+                vy = sign(vy) * max(0, abs(vy) - 0.03);
+            }
+        }
+        
+        move_and_collide(vx, vy, _collision_targets);
+        
+        if (vx != 0 && place_meeting(x + sign(vx), y, _collision_targets)) {
+            vx = 0;
+        }
        
+        if (vy != 0 && place_meeting(x, y + sign(vy), _collision_targets)) {
+            vy = 0;
+        }
+        
+    } else {
+        vx = 0;
+        vy = 0;
+        move_and_collide(move_speed * _horiz, move_speed * _vert, _collision_targets);
+    }
+    
        if (array_contains(rocket_rooms, room)) {
            sprite_index = spr_player_rocket;
        } else if (_vert != 0 or _horiz != 0) {
@@ -81,7 +122,8 @@ normal_step = function() {
                else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up
                    else if (sprite_index == spr_player_walk_right) sprite_index = spr_player_idle_right;
                        else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_idle_left;
-       }
+                    }
+    
 }
 
 platformer_step = function() {

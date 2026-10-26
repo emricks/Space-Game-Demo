@@ -25,5 +25,3 @@ if (pathframe != 0 && path_index == -1) {
 if (!obj_dialoguebox.is_active and !array_contains(no_movement_rooms, room)) {
     global.mobile = 1;
 }
-
-show_debug_message(string(x)+" "+string(y))

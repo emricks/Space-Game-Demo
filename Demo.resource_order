@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings":[
-    {"name":"Paths","order":18,"path":"folders/Paths.yy",},
     {"name":"Objects","order":12,"path":"folders/Objects.yy",},
+    {"name":"Paths","order":18,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":13,"path":"folders/Rooms.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Background Sprites","order":33,"path":"folders/Sprites/Background Sprites.yy",},
@@ -40,6 +40,7 @@
     {"name":"spr_far_clouds","order":2,"path":"sprites/spr_far_clouds/spr_far_clouds.yy",},
     {"name":"spr_galaxies","order":3,"path":"sprites/spr_galaxies/spr_galaxies.yy",},
     {"name":"spr_ice_planet","order":11,"path":"sprites/spr_ice_planet/spr_ice_planet.yy",},
+    {"name":"spr_iceplanet_tiles","order":6,"path":"sprites/spr_iceplanet_tiles/spr_iceplanet_tiles.yy",},
     {"name":"spr_low_sky","order":6,"path":"sprites/spr_low_sky/spr_low_sky.yy",},
     {"name":"spr_npc_down","order":6,"path":"sprites/spr_npc_down/spr_npc_down.yy",},
     {"name":"spr_npc_left","order":7,"path":"sprites/spr_npc_left/spr_npc_left.yy",},
@@ -72,5 +73,6 @@
     {"name":"TileSet4","order":3,"path":"tilesets/TileSet4/TileSet4.yy",},
     {"name":"TileSet5","order":4,"path":"tilesets/TileSet5/TileSet5.yy",},
     {"name":"TileSet6","order":5,"path":"tilesets/TileSet6/TileSet6.yy",},
+    {"name":"TileSet7","order":6,"path":"tilesets/TileSet7/TileSet7.yy",},
   ],
 }

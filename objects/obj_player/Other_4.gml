@@ -26,3 +26,9 @@ if (room == rm_space) {
     alarm[1] = 40;
 }
 
+if (array_contains(ice_rooms, room)) {
+    tilemap_ice = layer_tilemap_get_id("Tiles_Ice");
+    global.ice_room = true;
+} else {
+    global.ice_room = false;
+}
