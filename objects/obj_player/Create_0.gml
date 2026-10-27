@@ -25,7 +25,7 @@ no_movement_rooms = [rm_space];
 rocket_rooms = [rm_space];
 platforming_rooms = [rm_cloud_planet];
 ice_rooms = [rm_ice_planet];
-collision_objects = [obj_npc];
+collision_objects = [obj_npc, obj_tree];
 
 rocket_start_angles = function(to, from) {
     if (from == obj_spaceship) {
